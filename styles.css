@@ -1,33 +1,39 @@
 body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #fff7f9;
+            background: #ffdaf3;
             color: #333;
         }
 
         header {
-            background: #ffdde7;
-            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Ícone esquerda / textos centro / contatos direita */
+            padding: 20px;
+            background: #ffbfd4;
+            border-bottom: 3px solid #ffffff; /**/
+        }
+
+        .titulo {
+            padding-left: 12.5rem;
             text-align: center;
-            border-bottom: 3px solid #ffb9c9;
+            flex: 1; /* garante que o centro realmente fique no centro */
         }
 
         header h1 {
             margin: 0;
             font-size: 40px;
-            color: #b4004e;
+            color: #99478e;
         }
-
+        
         header h2 {
             margin: 5px 0 20px 0;
             font-size: 20px;
-            color: #8c0040;
+            color: #b65e86;
         }
 
-        #contatos h3 {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #5c0030;
+        #contatos {
+            text-align: left;
         }
 
         /* Seção Sobre */
@@ -38,7 +44,7 @@ body {
 
         #Inicio h1 {
             font-size: 32px;
-            color: #b4004e;
+            color: #c26a90;
         }
 
         #Inicio h3 {
@@ -67,4 +73,10 @@ body {
 
         #portfolio img:hover {
             transform: scale(1.05);
+        }
+
+        .icone-header {
+            width: 80px; /* Ajuste se quiser */
+            opacity: 0.5; /* 50% transparente */
+            
         }
